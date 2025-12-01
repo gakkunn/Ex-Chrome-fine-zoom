@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fine Zoom Step</title>
+    <link rel="stylesheet" href="styles/popup.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1 class="title">Fine Zoom Step</h1>
+      <p id="current-step" class="label">
+        Current step: <span id="current-step-value">-</span>%
+      </p>
+
+      <label for="zoom-step-range" class="label">
+        Zoom step (1–10%)
+      </label>
+      <input type="range" id="zoom-step-range" min="1" max="10" step="1" />
+      <p id="selected-step" class="label">
+        Selected: <span id="selected-step-value">-</span>%
+      </p>
+
+      <p class="description">
+        Shortcuts:
+        <strong>
+          <span id="shortcut-zoom-in">Ctrl+Shift+↑</span>
+          /
+          <span id="shortcut-zoom-out">Ctrl+Shift+↓</span>
+        </strong>
+      </p>
+      <p class="description">
+        Shortcut keys can be changed from the
+        <a href="#" id="open-shortcut-settings">extension shortcut settings page</a>.
+      </p>
+    </div>
+    <script type="module" src="popup/popup.js"></script>
+  </body>
+</html>
