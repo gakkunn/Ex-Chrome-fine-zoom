@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in contributing to this Chrome extension!
+Thank you for your interest in contributing to this Chrome extension!  
 This document explains the basic flow for contributing. Keep it simple and feel free to adjust this file for your project.
 
 ---
@@ -26,7 +26,7 @@ When filing an Issue, try to include:
 1. **Fork** this repository and **clone** your fork locally:
 
    ```bash
-   git clone https://github.com/your-username/Ex-Chrome-fine-zoom.git
+   git clone https://github.com/gakkunn/Ex-Chrome-fine-zoom.git
    cd Ex-Chrome-fine-zoom
    ```
 
@@ -38,11 +38,13 @@ When filing an Issue, try to include:
 
 3. Open the project in your editor and make sure you can see the `src/` directory.
 
+> 💡 Please adjust the commands above (such as `npm install`) to match your actual environment if necessary.
+
 ---
 
 ## Running the extension locally in Chrome
 
-1. Build the extension:
+1. Build the extension (or run the dev build if you want sourcemaps):
 
    ```bash
    npm run build
@@ -69,26 +71,29 @@ When filing an Issue, try to include:
 ## Coding style & guidelines
 
 - Follow the existing code style (indentation, naming, file structure, etc.).
-- Use ESLint and Prettier to maintain code quality:
-  - `npm run lint` - Run ESLint
-  - `npm run lint:fix` - Run ESLint with auto-fix
-  - `npm run format` - Format code with Prettier
-  - `npm run check` - Run both linter and format check
-- Run type checking before committing:
-  - `npm run typecheck` - Run TypeScript type checking
+- If Linters or Formatters (ESLint, Prettier, etc.) are configured in the project, please run them before committing if possible.
 - Aim for small and clear commit messages.
 
 Example:
 
 ```bash
-git commit -m "fix: handle null tab in background script"
+git commit -m "Fix: handle null tab in background script"
 ```
+
+### Recommended commands
+
+- `npm run lint` - Run ESLint
+- `npm run lint:fix` - Run ESLint with auto-fix
+- `npm run format` - Format code with Prettier
+- `npm run format:check` - Check code formatting
+- `npm run check` - Run both linter and format check
+- `npm run typecheck` - Run TypeScript type checking
 
 ---
 
 ## Making changes
 
-1. Create a branch from `main`:
+1. Create a branch from `main` (or `master`):
 
    ```bash
    git switch -c feature/update-popup-ui
@@ -120,5 +125,5 @@ git commit -m "fix: handle null tab in background script"
 
 ## Thank you
 
-Thank you for considering contributing to this OSS Chrome extension!
+Thank you for considering contributing to this OSS Chrome extension!  
 Bug reports, suggestions, document fixes, and any small contributions are welcome.

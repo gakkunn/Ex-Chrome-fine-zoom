@@ -4,7 +4,11 @@
 
 ## Overview
 
-A Chrome extension that provides fine-grained zoom control for web pages using customizable keyboard shortcuts. Adjust your browser's zoom level in precise increments (1-10%) for better control than standard zoom commands.
+Fine Zoom Step brings fine-grained zoom control to Chrome with a simple popup slider and keyboard shortcuts that respect your preferred increment.
+
+- Select a zoom step between 1% and 10% in the popup and store it in Chrome Sync storage.
+- Use shortcut keys (Ctrl+Shift+Up / Ctrl+Shift+Down) to zoom in small increments without opening the menu.
+- Open the shortcut settings page from the popup when you need to remap any commands or inspect the defaults.
 
 This is an open-source extension implemented based on Chrome Extension Manifest v3.
 
@@ -12,23 +16,26 @@ This is an open-source extension implemented based on Chrome Extension Manifest 
 
 ## Features
 
-- **Fine-grained zoom control**: Adjust zoom in small increments (1-10%) instead of the default larger steps
-- **Keyboard shortcuts**: Quick access via customizable shortcuts (default: Ctrl+Shift+Up/Down)
-- **Persistent settings**: Your zoom step preference is saved using Chrome Storage and synced across devices
-- **User-friendly popup UI**: Easily configure your preferred zoom step increment
-- **Direct shortcut customization**: Quick access to Chrome's shortcut settings page
+- **Adjustable zoom increments**: Slide a range input to pick how aggressive each zoom step should be (1–10%) and persist it across devices.
+- **Keyboard shortcuts**: Fine zoom in/out commands land on `Ctrl+Shift+Up` and `Ctrl+Shift+Down` (or the macOS equivalents) for quick access.
+- **Popup controls**: The popup surfaces the current and selected zoom step plus a link to Chrome’s shortcut settings so you can inspect or change bindings.
+- **Safe zoom range**: Zoom values stay clamped between Chrome’s safe range (0.3x–5.0x) to avoid unusable zoom levels.
+- **Manifest v3 friendly**: Background scripts, storage, and commands are handled through a service worker and the official Chrome APIs.
 
 ---
 
 ## Screenshots
 
-Screenshots will be added in a future update.
+| Screen                                          | 
+| ----------------------------------------------- | 
+| ![screenshot-1](./docs/screenshot-1.png) | 
+| ![screenshot-2](./docs/screenshot-2.png) |
 
 ---
 
 ## Installation
 
-> ℹ️ **Not yet published to the Chrome Web Store.**
+> ℹ️ **Not yet published to the Chrome Web Store.**  
 > You can use it via "Local Installation (Developer Mode)" below.
 
 ### 1. Clone the repository
@@ -58,11 +65,10 @@ npm run build
 ## Usage
 
 1. After installing the extension, pin the icon from the Chrome toolbar.
-2. Click the icon to open the popup and adjust your preferred zoom step (1-10%).
-3. Use keyboard shortcuts to zoom in/out:
-   - **Zoom In**: `Ctrl+Shift+Up` (Mac: `MacCtrl+Shift+Up`)
-   - **Zoom Out**: `Ctrl+Shift+Down` (Mac: `MacCtrl+Shift+Down`)
-4. Customize shortcuts by clicking "Shortcut Settings" in the popup or navigate to `chrome://extensions/shortcuts`
+2. Click the icon to open the popup and adjust the zoom step slider between 1% and 10%.
+3. Press the configured keyboard shortcuts to zoom in/out using the fine step you selected.
+4. Click “Shortcut settings” in the popup to jump to `chrome://extensions/shortcuts` if you want to remap the commands.
+5. The selected zoom step is saved via Chrome Sync, so it stays consistent across your signed-in browsers.
 
 ---
 
@@ -78,23 +84,22 @@ npm run build
 ```bash
 git clone https://github.com/gakkunn/Ex-Chrome-fine-zoom.git
 cd Ex-Chrome-fine-zoom
-
 npm install
-npm run build   # Production build
-# or
-npm run watch   # Development build with auto-rebuild
+# Production build
+npm run build
+# Development build with source maps
+npm run dev
+# Watch mode for quick iteration
+npm run watch
 ```
 
-### Available Scripts
+### Test
 
-- `npm run build` - Build the extension for production
-- `npm run watch` - Build with auto-rebuild on file changes
-- `npm run lint` - Run ESLint
-- `npm run lint:fix` - Run ESLint with auto-fix
-- `npm run format` - Format code with Prettier
-- `npm run format:check` - Check code formatting
-- `npm run check` - Run both linter and format check
-- `npm run typecheck` - Run TypeScript type checking
+```bash
+npm run check
+```
+
+Use `npm run lint`/`npm run typecheck`/`npm run format:check` individually if you need more granular feedback.
 
 ---
 
@@ -102,38 +107,33 @@ npm run watch   # Development build with auto-rebuild
 
 ```text
 Ex-Chrome-fine-zoom/
-  src/                      # Extension source code
+  src/
     background/
-      background.ts         # Background service worker
+      background.ts        # Service worker logic handling commands
     popup/
-      popup.ts              # Popup UI logic
-    utils/
-      common.ts             # Common utilities
-      zoomStep.ts           # Zoom step configuration
-      zoomStepManager.ts    # Zoom step management
-    types/
-      global.d.ts           # TypeScript type definitions
-  public/                   # Static assets
-    manifest.json           # Chrome Extension Manifest
-    popup.html              # Popup HTML
+      popup.ts             # Popup UI logic and slider binding
+    utils/                 # Helpers around zoom steps and storage
+    types/                 # Shared TypeScript definitions
+  public/
+    manifest.json           # Extension manifest v3
+    popup.html             # Popup markup
     styles/
-      popup.css             # Popup styles
-    icons/                  # Extension icons
-  dist/                     # Build artifacts (generated)
+      popup.css            # Popup styles
+    icons/                 # Extension icons
   scripts/
-    copy-public.mjs         # Build script to copy public assets
+    copy-public.mjs         # Copies static assets before build
+  docs/                     # Screenshot and asset guidelines
+  dist/                     # Build artifacts (generated)
   package.json
   tsconfig.json
   eslint.config.cjs
-  .prettierrc
-  .gitignore
 ```
 
 ---
 
 ## Contributing
 
-Bug reports, feature suggestions, and pull requests are welcome!
+Bug reports, feature suggestions, and pull requests are welcome 🎉
 
 Please refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 
@@ -144,6 +144,12 @@ Quick steps:
 3. Create a branch (e.g., `feat/xxx`, `fix/yyy`)
 4. Commit changes and push
 5. Create a Pull Request
+
+---
+
+## Privacy Policy
+
+Zoom Browser By Fine Step does not collect personally identifiable information and does not transmit browsing data off your device. For details, see our [Privacy Policy](./PRIVACY_POLICY.md).
 
 ---
 
