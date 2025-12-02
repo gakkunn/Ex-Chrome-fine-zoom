@@ -1,1 +1,1 @@
-export type ZoomCommand = 'zoom_in_fine' | 'zoom_out_fine';
+export type { ZoomCommand } from './commands';

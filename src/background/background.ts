@@ -1,7 +1,7 @@
+import { isZoomCommand, type ZoomCommand } from '../types/commands';
 import { clamp } from '../utils/common';
 import { ZOOM_STEP_KEY } from '../utils/zoomStep';
 import { zoomStepManager } from '../utils/zoomStepManager';
-import type { ZoomCommand } from '../types/global';
 
 const MIN_ZOOM = 0.3;
 const MAX_ZOOM = 5.0;
@@ -52,9 +52,3 @@ chrome.commands.onCommand.addListener((command) => {
     void handleZoomCommand(command);
   }
 });
-
-const zoomCommandNames: ZoomCommand[] = ['zoom_in_fine', 'zoom_out_fine'];
-
-function isZoomCommand(command: string): command is ZoomCommand {
-  return zoomCommandNames.includes(command as ZoomCommand);
-}

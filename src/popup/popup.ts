@@ -1,10 +1,11 @@
-import { loadZoomStepPercent, saveZoomStepPercent, sanitizeZoomStep } from '../utils/zoomStep';
-import type { ZoomCommand } from '../types/global';
-
-const SHORTCUT_ELEMENT_IDS: Record<ZoomCommand, string> = {
-  zoom_in_fine: 'shortcut-zoom-in',
-  zoom_out_fine: 'shortcut-zoom-out',
-};
+import { SHORTCUT_ELEMENT_IDS, type ZoomCommand } from '../types/commands';
+import {
+  MAX_ZOOM_STEP_PERCENT,
+  MIN_ZOOM_STEP_PERCENT,
+  loadZoomStepPercent,
+  saveZoomStepPercent,
+  sanitizeZoomStep,
+} from '../utils/zoomStep';
 const DEFAULT_SHORTCUT_LABEL = 'Not set';
 const SHORTCUT_SETTINGS_URL = 'chrome://extensions/shortcuts';
 
@@ -53,6 +54,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (!range) {
     return;
   }
+
+  range.min = String(MIN_ZOOM_STEP_PERCENT);
+  range.max = String(MAX_ZOOM_STEP_PERCENT);
 
   void loadShortcuts();
 
