@@ -4,7 +4,8 @@
   "private": true,
   "description": "Fine-grained zoom control for Chrome with keyboard shortcuts.",
   "scripts": {
-    "build": "node scripts/copy-public.mjs && esbuild src/background/background.ts src/popup/popup.ts --bundle --outdir=dist --format=esm --target=es2020 --minify",
+    "build": "node scripts/copy-public.mjs && esbuild src/background/background.ts src/popup/popup.ts --bundle --outdir=dist --format=esm --target=es2020 --minify --drop:console --drop:debugger",
+    "dev": "node scripts/copy-public.mjs && esbuild src/background/background.ts src/popup/popup.ts --bundle --outdir=dist --format=esm --target=es2020 --sourcemap",
     "watch": "node scripts/copy-public.mjs && esbuild src/background/background.ts src/popup/popup.ts --bundle --outdir=dist --format=esm --target=es2020 --sourcemap --watch",
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "eslint \"src/**/*.ts\" --fix",
