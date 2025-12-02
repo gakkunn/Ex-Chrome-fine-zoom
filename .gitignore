@@ -9,9 +9,10 @@ logs/
 *.swp
 *.swo
 
-# Build artifacts
+# Build artifacts / generated output
 dist/
 build/
+out/
 *.tsbuildinfo
 
 # Dependency directories
@@ -23,5 +24,5 @@ node_modules/
 *.local
 
 # Editor / IDE settings
+.vscode/
 .idea/
-*.iml
