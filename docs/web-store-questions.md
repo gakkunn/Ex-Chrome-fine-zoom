@@ -91,12 +91,12 @@ The tabs permission is required to retrieve and modify the zoom level of the cur
 
 ---
 
-### 3.3 Host permission justification
+### 3.3 Storage justification
 
-📝 **Host permission justification** (approx. 200 characters)
+📝 **Storage justification** (approx. 200 characters)
 
 ```
-This extension does not declare any host permissions in the manifest. The tabs permission is used solely to get and set the zoom level on the active tab. No content scripts are injected and no web requests are made.
+The extension uses chrome.storage.sync to save the user's preferred zoom step (a single integer between 1 and 10). This allows the setting to persist and sync across devices. No personal data is stored.
 ```
 
 ---
