@@ -31,10 +31,6 @@
     "message": "縮放步進 (1–10%)",
     "description": "Label for the zoom step slider control"
   },
-  "popup_selected_step": {
-    "message": "已選擇:",
-    "description": "Label showing the currently selected zoom step"
-  },
   "popup_shortcuts": {
     "message": "快速鍵:",
     "description": "Label for the keyboard shortcuts section"

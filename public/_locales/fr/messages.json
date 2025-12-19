@@ -31,10 +31,6 @@
     "message": "Pas de zoom (1–10%)",
     "description": "Label for the zoom step slider control"
   },
-  "popup_selected_step": {
-    "message": "Sélectionné :",
-    "description": "Label showing the currently selected zoom step"
-  },
   "popup_shortcuts": {
     "message": "Raccourcis :",
     "description": "Label for the keyboard shortcuts section"

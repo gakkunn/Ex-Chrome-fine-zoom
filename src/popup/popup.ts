@@ -40,7 +40,6 @@ function applyI18n(): void {
 function renderStepLabels(step: number): void {
   const text = String(step);
   setElementText('current-step-value', text);
-  setElementText('selected-step-value', text);
 }
 
 function createDebouncedSaver(delay = 250): (value: number) => void {

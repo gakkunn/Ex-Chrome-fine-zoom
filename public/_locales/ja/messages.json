@@ -31,10 +31,6 @@
     "message": "ズームステップ (1〜10%)",
     "description": "Label for the zoom step slider control"
   },
-  "popup_selected_step": {
-    "message": "選択中:",
-    "description": "Label showing the currently selected zoom step"
-  },
   "popup_shortcuts": {
     "message": "ショートカット:",
     "description": "Label for the keyboard shortcuts section"

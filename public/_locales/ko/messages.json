@@ -31,10 +31,6 @@
     "message": "줌 단계 (1–10%)",
     "description": "Label for the zoom step slider control"
   },
-  "popup_selected_step": {
-    "message": "선택됨:",
-    "description": "Label showing the currently selected zoom step"
-  },
   "popup_shortcuts": {
     "message": "단축키:",
     "description": "Label for the keyboard shortcuts section"
