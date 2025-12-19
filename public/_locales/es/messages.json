@@ -1,0 +1,59 @@
+{
+  "ext_name": {
+    "message": "Zoom de paso fino",
+    "description": "The name of the extension displayed in Chrome"
+  },
+  "ext_description": {
+    "message": "Controla el zoom de página de Chrome en pasos finos usando atajos de teclado.",
+    "description": "The description of the extension displayed in Chrome Web Store"
+  },
+  "action_title": {
+    "message": "Zoom de paso fino",
+    "description": "The tooltip text for the browser action icon"
+  },
+  "command_zoom_in": {
+    "message": "Acercar finamente",
+    "description": "Description for the zoom in keyboard shortcut command"
+  },
+  "command_zoom_out": {
+    "message": "Alejar finamente",
+    "description": "Description for the zoom out keyboard shortcut command"
+  },
+  "popup_title": {
+    "message": "Zoom de paso fino",
+    "description": "The title displayed in the popup header"
+  },
+  "popup_current_step": {
+    "message": "Paso actual:",
+    "description": "Label showing the current zoom step percentage"
+  },
+  "popup_zoom_step_range": {
+    "message": "Paso de zoom (1–10%)",
+    "description": "Label for the zoom step slider control"
+  },
+  "popup_selected_step": {
+    "message": "Seleccionado:",
+    "description": "Label showing the currently selected zoom step"
+  },
+  "popup_shortcuts": {
+    "message": "Atajos:",
+    "description": "Label for the keyboard shortcuts section"
+  },
+  "popup_shortcut_settings_hint": {
+    "message": "Los atajos de teclado se pueden cambiar desde la",
+    "description": "Hint text before the settings link"
+  },
+  "popup_shortcut_settings_link": {
+    "message": "página de configuración de atajos",
+    "description": "Link text to open the Chrome extension shortcuts settings"
+  },
+  "popup_shortcut_settings_suffix": {
+    "message": ".",
+    "description": "Suffix text after the settings link"
+  },
+  "popup_shortcut_not_set": {
+    "message": "No configurado",
+    "description": "Displayed when a keyboard shortcut is not configured"
+  }
+}
+

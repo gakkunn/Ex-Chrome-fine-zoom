@@ -1,0 +1,59 @@
+{
+  "ext_name": {
+    "message": "Zoom em passos finos",
+    "description": "The name of the extension displayed in Chrome"
+  },
+  "ext_description": {
+    "message": "Controle o zoom da página do Chrome em passos finos usando atalhos de teclado.",
+    "description": "The description of the extension displayed in Chrome Web Store"
+  },
+  "action_title": {
+    "message": "Zoom em passos finos",
+    "description": "The tooltip text for the browser action icon"
+  },
+  "command_zoom_in": {
+    "message": "Aumentar zoom finamente",
+    "description": "Description for the zoom in keyboard shortcut command"
+  },
+  "command_zoom_out": {
+    "message": "Diminuir zoom finamente",
+    "description": "Description for the zoom out keyboard shortcut command"
+  },
+  "popup_title": {
+    "message": "Zoom em passos finos",
+    "description": "The title displayed in the popup header"
+  },
+  "popup_current_step": {
+    "message": "Passo atual:",
+    "description": "Label showing the current zoom step percentage"
+  },
+  "popup_zoom_step_range": {
+    "message": "Passo de zoom (1–10%)",
+    "description": "Label for the zoom step slider control"
+  },
+  "popup_selected_step": {
+    "message": "Selecionado:",
+    "description": "Label showing the currently selected zoom step"
+  },
+  "popup_shortcuts": {
+    "message": "Atalhos:",
+    "description": "Label for the keyboard shortcuts section"
+  },
+  "popup_shortcut_settings_hint": {
+    "message": "Os atalhos de teclado podem ser alterados na",
+    "description": "Hint text before the settings link"
+  },
+  "popup_shortcut_settings_link": {
+    "message": "página de configurações de atalhos",
+    "description": "Link text to open the Chrome extension shortcuts settings"
+  },
+  "popup_shortcut_settings_suffix": {
+    "message": ".",
+    "description": "Suffix text after the settings link"
+  },
+  "popup_shortcut_not_set": {
+    "message": "Não configurado",
+    "description": "Displayed when a keyboard shortcut is not configured"
+  }
+}
+

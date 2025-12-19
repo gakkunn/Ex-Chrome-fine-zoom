@@ -1,0 +1,59 @@
+{
+  "ext_name": {
+    "message": "Zoom par pas fins",
+    "description": "The name of the extension displayed in Chrome"
+  },
+  "ext_description": {
+    "message": "Contrôlez le zoom des pages Chrome par pas fins à l'aide de raccourcis clavier.",
+    "description": "The description of the extension displayed in Chrome Web Store"
+  },
+  "action_title": {
+    "message": "Zoom par pas fins",
+    "description": "The tooltip text for the browser action icon"
+  },
+  "command_zoom_in": {
+    "message": "Zoom avant fin",
+    "description": "Description for the zoom in keyboard shortcut command"
+  },
+  "command_zoom_out": {
+    "message": "Zoom arrière fin",
+    "description": "Description for the zoom out keyboard shortcut command"
+  },
+  "popup_title": {
+    "message": "Zoom par pas fins",
+    "description": "The title displayed in the popup header"
+  },
+  "popup_current_step": {
+    "message": "Pas actuel :",
+    "description": "Label showing the current zoom step percentage"
+  },
+  "popup_zoom_step_range": {
+    "message": "Pas de zoom (1–10%)",
+    "description": "Label for the zoom step slider control"
+  },
+  "popup_selected_step": {
+    "message": "Sélectionné :",
+    "description": "Label showing the currently selected zoom step"
+  },
+  "popup_shortcuts": {
+    "message": "Raccourcis :",
+    "description": "Label for the keyboard shortcuts section"
+  },
+  "popup_shortcut_settings_hint": {
+    "message": "Les raccourcis clavier peuvent être modifiés depuis la",
+    "description": "Hint text before the settings link"
+  },
+  "popup_shortcut_settings_link": {
+    "message": "page des paramètres de raccourcis",
+    "description": "Link text to open the Chrome extension shortcuts settings"
+  },
+  "popup_shortcut_settings_suffix": {
+    "message": ".",
+    "description": "Suffix text after the settings link"
+  },
+  "popup_shortcut_not_set": {
+    "message": "Non défini",
+    "description": "Displayed when a keyboard shortcut is not configured"
+  }
+}
+

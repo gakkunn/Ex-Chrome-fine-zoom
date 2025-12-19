@@ -1,0 +1,59 @@
+{
+  "ext_name": {
+    "message": "精細縮放步進",
+    "description": "The name of the extension displayed in Chrome"
+  },
+  "ext_description": {
+    "message": "使用鍵盤快速鍵精細控制 Chrome 頁面縮放。",
+    "description": "The description of the extension displayed in Chrome Web Store"
+  },
+  "action_title": {
+    "message": "精細縮放步進",
+    "description": "The tooltip text for the browser action icon"
+  },
+  "command_zoom_in": {
+    "message": "精細放大",
+    "description": "Description for the zoom in keyboard shortcut command"
+  },
+  "command_zoom_out": {
+    "message": "精細縮小",
+    "description": "Description for the zoom out keyboard shortcut command"
+  },
+  "popup_title": {
+    "message": "精細縮放步進",
+    "description": "The title displayed in the popup header"
+  },
+  "popup_current_step": {
+    "message": "目前步進:",
+    "description": "Label showing the current zoom step percentage"
+  },
+  "popup_zoom_step_range": {
+    "message": "縮放步進 (1–10%)",
+    "description": "Label for the zoom step slider control"
+  },
+  "popup_selected_step": {
+    "message": "已選擇:",
+    "description": "Label showing the currently selected zoom step"
+  },
+  "popup_shortcuts": {
+    "message": "快速鍵:",
+    "description": "Label for the keyboard shortcuts section"
+  },
+  "popup_shortcut_settings_hint": {
+    "message": "可在",
+    "description": "Hint text before the settings link"
+  },
+  "popup_shortcut_settings_link": {
+    "message": "擴充功能快速鍵設定頁面",
+    "description": "Link text to open the Chrome extension shortcuts settings"
+  },
+  "popup_shortcut_settings_suffix": {
+    "message": "中變更快速鍵。",
+    "description": "Suffix text after the settings link (Chinese grammar requires this)"
+  },
+  "popup_shortcut_not_set": {
+    "message": "未設定",
+    "description": "Displayed when a keyboard shortcut is not configured"
+  }
+}
+

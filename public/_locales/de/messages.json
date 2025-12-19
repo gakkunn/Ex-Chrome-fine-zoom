@@ -1,0 +1,59 @@
+{
+  "ext_name": {
+    "message": "Feiner Zoom-Schritt",
+    "description": "The name of the extension displayed in Chrome"
+  },
+  "ext_description": {
+    "message": "Steuern Sie den Chrome-Seitenzoom in feinen Schritten mit Tastenkombinationen.",
+    "description": "The description of the extension displayed in Chrome Web Store"
+  },
+  "action_title": {
+    "message": "Feiner Zoom-Schritt",
+    "description": "The tooltip text for the browser action icon"
+  },
+  "command_zoom_in": {
+    "message": "Fein vergrößern",
+    "description": "Description for the zoom in keyboard shortcut command"
+  },
+  "command_zoom_out": {
+    "message": "Fein verkleinern",
+    "description": "Description for the zoom out keyboard shortcut command"
+  },
+  "popup_title": {
+    "message": "Feiner Zoom-Schritt",
+    "description": "The title displayed in the popup header"
+  },
+  "popup_current_step": {
+    "message": "Aktueller Schritt:",
+    "description": "Label showing the current zoom step percentage"
+  },
+  "popup_zoom_step_range": {
+    "message": "Zoom-Schritt (1–10%)",
+    "description": "Label for the zoom step slider control"
+  },
+  "popup_selected_step": {
+    "message": "Ausgewählt:",
+    "description": "Label showing the currently selected zoom step"
+  },
+  "popup_shortcuts": {
+    "message": "Tastenkürzel:",
+    "description": "Label for the keyboard shortcuts section"
+  },
+  "popup_shortcut_settings_hint": {
+    "message": "Tastenkürzel können auf der",
+    "description": "Hint text before the settings link"
+  },
+  "popup_shortcut_settings_link": {
+    "message": "Seite für Tastenkürzel-Einstellungen",
+    "description": "Link text to open the Chrome extension shortcuts settings"
+  },
+  "popup_shortcut_settings_suffix": {
+    "message": "geändert werden.",
+    "description": "Suffix text after the settings link (German grammar requires this)"
+  },
+  "popup_shortcut_not_set": {
+    "message": "Nicht festgelegt",
+    "description": "Displayed when a keyboard shortcut is not configured"
+  }
+}
+

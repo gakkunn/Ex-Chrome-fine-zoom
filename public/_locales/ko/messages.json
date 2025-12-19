@@ -1,0 +1,59 @@
+{
+  "ext_name": {
+    "message": "세밀한 줌 단계",
+    "description": "The name of the extension displayed in Chrome"
+  },
+  "ext_description": {
+    "message": "키보드 단축키를 사용하여 Chrome 페이지 확대/축소를 세밀하게 조절합니다.",
+    "description": "The description of the extension displayed in Chrome Web Store"
+  },
+  "action_title": {
+    "message": "세밀한 줌 단계",
+    "description": "The tooltip text for the browser action icon"
+  },
+  "command_zoom_in": {
+    "message": "세밀하게 확대",
+    "description": "Description for the zoom in keyboard shortcut command"
+  },
+  "command_zoom_out": {
+    "message": "세밀하게 축소",
+    "description": "Description for the zoom out keyboard shortcut command"
+  },
+  "popup_title": {
+    "message": "세밀한 줌 단계",
+    "description": "The title displayed in the popup header"
+  },
+  "popup_current_step": {
+    "message": "현재 단계:",
+    "description": "Label showing the current zoom step percentage"
+  },
+  "popup_zoom_step_range": {
+    "message": "줌 단계 (1–10%)",
+    "description": "Label for the zoom step slider control"
+  },
+  "popup_selected_step": {
+    "message": "선택됨:",
+    "description": "Label showing the currently selected zoom step"
+  },
+  "popup_shortcuts": {
+    "message": "단축키:",
+    "description": "Label for the keyboard shortcuts section"
+  },
+  "popup_shortcut_settings_hint": {
+    "message": "단축키는",
+    "description": "Hint text before the settings link"
+  },
+  "popup_shortcut_settings_link": {
+    "message": "확장 프로그램 단축키 설정 페이지",
+    "description": "Link text to open the Chrome extension shortcuts settings"
+  },
+  "popup_shortcut_settings_suffix": {
+    "message": "에서 변경할 수 있습니다.",
+    "description": "Suffix text after the settings link (Korean grammar requires this)"
+  },
+  "popup_shortcut_not_set": {
+    "message": "미설정",
+    "description": "Displayed when a keyboard shortcut is not configured"
+  }
+}
+

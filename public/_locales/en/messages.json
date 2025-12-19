@@ -1,0 +1,59 @@
+{
+  "ext_name": {
+    "message": "Fine Zoom Step",
+    "description": "The name of the extension displayed in Chrome"
+  },
+  "ext_description": {
+    "message": "Control Chrome page zoom in fine-grained steps using keyboard shortcuts.",
+    "description": "The description of the extension displayed in Chrome Web Store"
+  },
+  "action_title": {
+    "message": "Fine Zoom Step",
+    "description": "The tooltip text for the browser action icon"
+  },
+  "command_zoom_in": {
+    "message": "Fine zoom in",
+    "description": "Description for the zoom in keyboard shortcut command"
+  },
+  "command_zoom_out": {
+    "message": "Fine zoom out",
+    "description": "Description for the zoom out keyboard shortcut command"
+  },
+  "popup_title": {
+    "message": "Fine Zoom Step",
+    "description": "The title displayed in the popup header"
+  },
+  "popup_current_step": {
+    "message": "Current step:",
+    "description": "Label showing the current zoom step percentage"
+  },
+  "popup_zoom_step_range": {
+    "message": "Zoom step (1–10%)",
+    "description": "Label for the zoom step slider control"
+  },
+  "popup_selected_step": {
+    "message": "Selected:",
+    "description": "Label showing the currently selected zoom step"
+  },
+  "popup_shortcuts": {
+    "message": "Shortcuts:",
+    "description": "Label for the keyboard shortcuts section"
+  },
+  "popup_shortcut_settings_hint": {
+    "message": "Shortcut keys can be changed from the",
+    "description": "Hint text before the settings link"
+  },
+  "popup_shortcut_settings_link": {
+    "message": "extension shortcut settings page",
+    "description": "Link text to open the Chrome extension shortcuts settings"
+  },
+  "popup_shortcut_settings_suffix": {
+    "message": ".",
+    "description": "Suffix text after the settings link"
+  },
+  "popup_shortcut_not_set": {
+    "message": "Not set",
+    "description": "Displayed when a keyboard shortcut is not configured"
+  }
+}
+

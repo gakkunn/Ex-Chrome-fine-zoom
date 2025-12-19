@@ -1,0 +1,59 @@
+{
+  "ext_name": {
+    "message": "細かいズームステップ",
+    "description": "The name of the extension displayed in Chrome"
+  },
+  "ext_description": {
+    "message": "キーボードショートカットを使用して、Chrome ページのズームを細かく調整できます。",
+    "description": "The description of the extension displayed in Chrome Web Store"
+  },
+  "action_title": {
+    "message": "細かいズームステップ",
+    "description": "The tooltip text for the browser action icon"
+  },
+  "command_zoom_in": {
+    "message": "細かくズームイン",
+    "description": "Description for the zoom in keyboard shortcut command"
+  },
+  "command_zoom_out": {
+    "message": "細かくズームアウト",
+    "description": "Description for the zoom out keyboard shortcut command"
+  },
+  "popup_title": {
+    "message": "細かいズームステップ",
+    "description": "The title displayed in the popup header"
+  },
+  "popup_current_step": {
+    "message": "現在のステップ:",
+    "description": "Label showing the current zoom step percentage"
+  },
+  "popup_zoom_step_range": {
+    "message": "ズームステップ (1〜10%)",
+    "description": "Label for the zoom step slider control"
+  },
+  "popup_selected_step": {
+    "message": "選択中:",
+    "description": "Label showing the currently selected zoom step"
+  },
+  "popup_shortcuts": {
+    "message": "ショートカット:",
+    "description": "Label for the keyboard shortcuts section"
+  },
+  "popup_shortcut_settings_hint": {
+    "message": "ショートカットキーは",
+    "description": "Hint text before the settings link"
+  },
+  "popup_shortcut_settings_link": {
+    "message": "拡張機能のショートカット設定ページ",
+    "description": "Link text to open the Chrome extension shortcuts settings"
+  },
+  "popup_shortcut_settings_suffix": {
+    "message": "から変更できます。",
+    "description": "Suffix text after the settings link (Japanese grammar requires this)"
+  },
+  "popup_shortcut_not_set": {
+    "message": "未設定",
+    "description": "Displayed when a keyboard shortcut is not configured"
+  }
+}
+
