@@ -6,7 +6,7 @@ import {
   saveZoomStepPercent,
   sanitizeZoomStep,
 } from '../utils/zoomStep';
-const DEFAULT_SHORTCUT_LABEL = 'Not set';
+
 const SHORTCUT_SETTINGS_URL = 'chrome://extensions/shortcuts';
 
 function getElement<T extends HTMLElement>(id: string): T | null {
@@ -17,6 +17,23 @@ function setElementText(id: string, text: string): void {
   const element = getElement<HTMLElement>(id);
   if (element) {
     element.textContent = text;
+  }
+}
+
+function getMessage(key: string): string {
+  return chrome.i18n.getMessage(key) || '';
+}
+
+function applyI18n(): void {
+  const elements = document.querySelectorAll<HTMLElement>('[data-i18n]');
+  for (const element of elements) {
+    const key = element.dataset.i18n;
+    if (key) {
+      const message = getMessage(key);
+      if (message) {
+        element.textContent = message;
+      }
+    }
   }
 }
 
@@ -40,9 +57,10 @@ async function loadShortcuts(): Promise<void> {
   try {
     const commands = await chrome.commands.getAll();
     const entries = Object.entries(SHORTCUT_ELEMENT_IDS) as [ZoomCommand, string][];
+    const defaultLabel = getMessage('popup_shortcut_not_set');
     for (const [commandName, elementId] of entries) {
       const shortcut = commands.find((command) => command.name === commandName)?.shortcut;
-      setElementText(elementId, shortcut ?? DEFAULT_SHORTCUT_LABEL);
+      setElementText(elementId, shortcut ?? defaultLabel);
     }
   } catch (error) {
     console.error('Failed to load shortcuts:', error);
@@ -50,6 +68,8 @@ async function loadShortcuts(): Promise<void> {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+  applyI18n();
+
   const range = getElement<HTMLInputElement>('zoom-step-range');
   if (!range) {
     return;

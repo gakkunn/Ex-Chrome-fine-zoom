@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Zoom Browser By Fine Step",
-  "description": "Control Chrome page zoom in fine-grained steps using keyboard shortcuts.",
+  "name": "__MSG_ext_name__",
+  "description": "__MSG_ext_description__",
   "version": "1.0.0",
+  "default_locale": "en",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
@@ -15,7 +16,7 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Fine Zoom Step",
+    "default_title": "__MSG_action_title__",
     "default_icon": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png"
@@ -27,14 +28,14 @@
         "default": "Ctrl+Shift+Up",
         "mac": "MacCtrl+Shift+Up"
       },
-      "description": "Fine zoom in"
+      "description": "__MSG_command_zoom_in__"
     },
     "zoom_out_fine": {
       "suggested_key": {
         "default": "Ctrl+Shift+Down",
         "mac": "MacCtrl+Shift+Down"
       },
-      "description": "Fine zoom out"
+      "description": "__MSG_command_zoom_out__"
     }
   }
 }
