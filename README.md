@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
+- Chrome Web Store: [Zoom Browser By Fine Step](https://chromewebstore.google.com/detail/zoom-browser-by-fine-step/alpninfaccioofppbgdfkfpdeiiboafc?authuser=0&hl=en)
+
 ## Overview
 
 Fine Zoom Step brings fine-grained zoom control to Chrome with a simple popup slider and keyboard shortcuts that respect your preferred increment.
@@ -35,8 +37,7 @@ This is an open-source extension implemented based on Chrome Extension Manifest 
 
 ## Installation
 
-> ℹ️ **Not yet published to the Chrome Web Store.**  
-> You can use it via "Local Installation (Developer Mode)" below.
+- Chrome Web Store: [Zoom Browser By Fine Step](https://chromewebstore.google.com/detail/zoom-browser-by-fine-step/alpninfaccioofppbgdfkfpdeiiboafc?authuser=0&hl=en)
 
 ### 1. Clone the repository
 
