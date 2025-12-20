@@ -6,27 +6,50 @@
     <link rel="stylesheet" href="styles/popup.css" />
   </head>
   <body>
-    <div id="container">
-      <h1 class="title" data-i18n="popup_title"></h1>
-      <p id="current-step" class="label">
-        <span data-i18n="popup_current_step"></span> <span id="current-step-value">-</span>%
-      </p>
+    <div id="app">
+      <div id="container">
+        <h1 class="title" data-i18n="popup_title"></h1>
+        <p id="current-step" class="label">
+          <span data-i18n="popup_current_step"></span> <span id="current-step-value">-</span>%
+        </p>
 
-      <label for="zoom-step-range" class="label" data-i18n="popup_zoom_step_range"></label>
-      <input type="range" id="zoom-step-range" step="1" />
+        <label for="zoom-step-range" class="label" data-i18n="popup_zoom_step_range"></label>
+        <input type="range" id="zoom-step-range" step="1" />
 
-      <p class="description">
-        <span data-i18n="popup_shortcuts"></span>
-        <strong>
-          <span id="shortcut-zoom-in"></span>
-          /
-          <span id="shortcut-zoom-out"></span>
-        </strong>
-      </p>
-      <p class="description">
-        <span data-i18n="popup_shortcut_settings_hint"></span>
-        <a href="#" id="open-shortcut-settings" data-i18n="popup_shortcut_settings_link"></a><span data-i18n="popup_shortcut_settings_suffix"></span>
-      </p>
+        <p class="description">
+          <span data-i18n="popup_shortcuts"></span>
+          <strong>
+            <span id="shortcut-zoom-in"></span>
+            /
+            <span id="shortcut-zoom-out"></span>
+          </strong>
+        </p>
+        <p class="description">
+          <span data-i18n="popup_shortcut_settings_hint"></span>
+          <a href="#" id="open-shortcut-settings" data-i18n="popup_shortcut_settings_link"></a><span data-i18n="popup_shortcut_settings_suffix"></span>
+        </p>
+      </div>
+
+      <footer>
+        <hr />
+        <section class="links">
+          <div>
+            <a class="footer-button github-button" href="https://github.com/gakkunn/Ex-Chrome-fine-zoom" target="_blank" alt="Contribute">
+              <span><img class="icon" src="img/github.png" alt="Contribute" /></span>
+            </a>
+          </div>
+          <div>
+            <a class="footer-button question-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdUrojL3aPDVq4j1gVplGdsjW27CzaCP7jyzjC4ZqK_qULkXw/viewform" target="_blank" alt="Report a problem">
+              <span><img class="icon" src="img/question.png" alt="Report a problem" /></span>
+            </a>
+          </div>
+          <div>
+            <a class="footer-button coffee-button" href="https://buymeacoffee.com/gakkunn" target="_blank" alt="Buy me a coffee">
+              <span><img class="icon" src="img/coffee-cup.png" alt="Buy me a coffee" /></span>
+            </a>
+          </div>
+        </section>
+      </footer>
     </div>
     <script type="module" src="popup/popup.js"></script>
   </body>
